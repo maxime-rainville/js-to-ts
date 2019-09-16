@@ -8,13 +8,13 @@ import "perfect-scrollbar/css/perfect-scrollbar.css";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
+import Header from "components/Header/Header";
+import Footer from "components/Footer/Footer";
+import Sidebar from "components/Sidebar/Sidebar";
 
-import dashboardRoutes from "routes/dashboard.jsx";
+import dashboardRoutes from "routes/dashboard";
 
-import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboardStyle.jsx";
+import dashboardStyle from "assets/jss/material-dashboard-react/layouts/dashboardStyle";
 
 import image from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
