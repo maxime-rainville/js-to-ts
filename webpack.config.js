@@ -11,7 +11,7 @@ module.exports = {
   mode: process.env.NODE_ENV || 'development',
   resolve: {
     modules: [path.resolve(__dirname,'src'),'node_modules'],
-    extensions: ['.json', '.js', '.jsx']
+    extensions: ['.json', '.js', '.jsx', '.ts', '.tsx'],
   },
   devServer: {
     contentBase: path.join(__dirname,'src')
@@ -27,6 +27,11 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', 'ts-loader']
       },
       {
         test: /\.(css|scss)$/,
