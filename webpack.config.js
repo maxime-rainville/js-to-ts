@@ -10,7 +10,8 @@ module.exports = {
   },
   mode: process.env.NODE_ENV || 'development',
   resolve: {
-    modules: [path.resolve(__dirname,'src'),'node_modules']
+    modules: [path.resolve(__dirname,'src'),'node_modules'],
+    extensions: ['.json', '.js', '.jsx']
   },
   devServer: {
     contentBase: path.join(__dirname,'src')
